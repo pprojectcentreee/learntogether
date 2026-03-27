@@ -342,7 +342,7 @@ a{text-decoration:none;color:inherit}
 <div class="spark-line top-left"></div><div class="spark-line top-right"></div>
 <div class="spark-line bottom-left"></div><div class="spark-line bottom-right"></div>
 <div class="warning-content">
-<div class="warning-icon">⚡ ⚡ ⚡</div>
+<div class="warning-icon">⚡ 🔒 ⚡</div>
 <h1 class="intro-title glitch-text" data-text="ELETRONAUTS">ELETRONAUTS</h1>
 <p class="intro-subtitle">KNOWLEDGE SHARING COMMUNITY</p>
 <p class="warning-text"><span class="highlight">*Take this As Serious. It's truly not for fun, please, and purely to share knowledge*</span></p>
@@ -353,7 +353,7 @@ a{text-decoration:none;color:inherit}
 <li>Any misuse of shared knowledge is <strong style="color:#fff;">strictly prohibited</strong>.</li>
 <li>You confirm that you are joining to <strong style="color:#fff;">learn, grow, and contribute</strong> positively.</li>
 </ul>
-<div class="warning-icon">⚡ ⚡ ⚡</div>
+<div class="warning-icon">⚡ 🔒 ⚡</div>
 <button class="accept-btn" onclick="acceptTerms()">⚡ I ACCEPT THESE TERMS ⚡</button>
 <button class="decline-btn" onclick="declineTerms()">I DECLINE</button>
 </div>
@@ -384,9 +384,9 @@ a{text-decoration:none;color:inherit}
 <div class="spark-line top-left"></div><div class="spark-line top-right"></div>
 <div class="spark-line bottom-left"></div><div class="spark-line bottom-right"></div>
 <div class="warning-content">
-<div class="warning-icon">⚡ ⚡ ⚡</div>
+<div class="warning-icon">⚡ 🔒 ⚡</div>
 <p class="warning-text"><span class="highlight">*Take this As Serious. It's truly not for fun, please, and purely to share knowledge*</span></p>
-<div class="warning-icon">⚡ ⚡ ⚡</div>
+<div class="warning-icon">⚡ 🔒 ⚡</div>
 </div>
 </div>
 </div>
@@ -410,7 +410,7 @@ a{text-decoration:none;color:inherit}
 <div class="input-container"><input type="email" id="email" class="form-input" placeholder="Enter your email address" required><div class="input-line"></div></div>
 </div>
 <div class="form-group">
-<label class="form-label"><span class="label-icon">🎯</span> YOUR INTERESTS</label>
+<label class="form-label"><span class="label-icon">💡</span> YOUR INTERESTS</label>
 <div class="checkbox-group">
 <label class="checkbox-container"><input type="checkbox" name="interests" value="Full Stack" onchange="handleInterestChange()"><span class="checkmark"></span><span class="checkbox-text">Full Stack Development</span></label>
 <label class="checkbox-container"><input type="checkbox" name="interests" value="Embedded Systems" onchange="handleInterestChange()"><span class="checkmark"></span><span class="checkbox-text">Embedded Systems</span></label>
@@ -419,7 +419,7 @@ a{text-decoration:none;color:inherit}
 <label class="checkbox-container"><input type="checkbox" name="interests" value="None of the Above" id="noneCheckbox" onchange="handleNoneChange()"><span class="checkmark"></span><span class="checkbox-text">None of the Above</span></label>
 </div>
 <div class="custom-interest-container" id="customInterestBox" style="display:none;">
-<label class="form-label sub-label"><span class="label-icon">✍️</span> Tell us your interests:</label>
+<label class="form-label sub-label"><span class="label-icon">✏️</span> Tell us your interests:</label>
 <div class="input-container"><textarea id="customInterest" class="form-textarea" placeholder="Describe your interests here..." rows="3"></textarea><div class="input-line"></div></div>
 </div>
 </div>
@@ -454,7 +454,7 @@ a{text-decoration:none;color:inherit}
 </div>
 </section>
 
-<div class="admin-trigger" id="adminTrigger" onclick="openPasswordModal()" title="Admin Panel">🔒</div>
+<div class="admin-trigger" id="adminTrigger" onclick="openPasswordModal()" title="Admin Panel">⚙️</div>
 
 <div class="modal-overlay" id="passwordModal">
 <div class="password-modal">
@@ -468,7 +468,7 @@ a{text-decoration:none;color:inherit}
 <button class="toggle-password" onclick="togglePasswordVisibility()" type="button" id="toggleBtn">👁️</button>
 </div>
 <div class="password-error" id="passwordError"></div>
-<button class="login-button" onclick="verifyPassword()">UNLOCK ⚡</button>
+<button class="login-button" onclick="verifyPassword()">UNLOCK 🔓</button>
 <p class="password-attempts" id="attemptsText"></p>
 </div>
 <div id="lockoutView" style="display:none;">
@@ -479,12 +479,12 @@ a{text-decoration:none;color:inherit}
 
 <div class="admin-panel" id="adminPanel">
 <div class="admin-header">
-<div class="admin-title">🛡️ ADMIN <span class="admin-badge">FIREBASE ☁️</span></div>
+<div class="admin-title">🛡️ ADMIN <span class="admin-badge">FIREBASE 🔥</span></div>
 <span class="session-timer" id="sessionTimer">SESSION: 10:00</span>
 <div class="admin-controls">
-<button class="admin-btn" id="refreshBtn" onclick="loadFromFirebase()">☁️ REFRESH</button>
-<button class="admin-btn" onclick="downloadCSV()">📥 CSV</button>
-<button class="admin-btn" onclick="downloadJSON()">📥 JSON</button>
+<button class="admin-btn" id="refreshBtn" onclick="loadFromFirebase()">🔄 REFRESH</button>
+<button class="admin-btn" onclick="downloadCSV()">📊 CSV</button>
+<button class="admin-btn" onclick="downloadJSON()">📋 JSON</button>
 <button class="admin-btn danger" onclick="clearAllFirebase()">🗑️ CLEAR</button>
 <button class="admin-btn logout" onclick="logoutAdmin()">🚪 EXIT</button>
 </div>
@@ -502,7 +502,7 @@ a{text-decoration:none;color:inherit}
 <div class="data-table-container">
 <table class="data-table">
 <thead><tr><th>#</th><th>NAME</th><th>WHATSAPP</th><th>EMAIL</th><th>INTERESTS</th><th>TYPE</th><th>TIME</th><th>DEL</th></tr></thead>
-<tbody id="adminTableBody"><tr><td colspan="8" class="no-data">Click ☁️ REFRESH to load data</td></tr></tbody>
+<tbody id="adminTableBody"><tr><td colspan="8" class="no-data">Click 🔄 REFRESH to load data</td></tr></tbody>
 </table>
 </div>
 </div>
@@ -511,7 +511,10 @@ a{text-decoration:none;color:inherit}
 <footer class="main-footer"><div class="footer-content"><p>© 2025 ELETRONAUTS | Built with ⚡ for Knowledge Sharing</p></div></footer>
 
 <script>
-var FIREBASE_URL = "https://tut-web-default-rtdb.firebaseio.com/";
+// ============================================
+// UPDATED FIREBASE URL FOR YOUR NEW PROJECT
+// ============================================
+var FIREBASE_URL = "https://learn-together-97c3b-default-rtdb.firebaseio.com/";
 var ADMIN_PASSWORD = "Greatis here";
 var allData = [];
 var sessionInterval = null;
@@ -543,16 +546,16 @@ for (var i = 0; i < keys.length; i++) { var item = raw[keys[i]]; item._key = key
 }
 btn.textContent = "✅ LOADED " + allData.length;
 filterTable();
-setTimeout(function() { btn.textContent = "☁️ REFRESH"; }, 2000);
+setTimeout(function() { btn.textContent = "🔄 REFRESH"; }, 2000);
 } else {
 btn.textContent = "❌ ERROR";
-setTimeout(function() { btn.textContent = "☁️ REFRESH"; }, 2000);
+setTimeout(function() { btn.textContent = "🔄 REFRESH"; }, 2000);
 }
 };
 x.onerror = function() {
 btn.disabled = false;
 btn.textContent = "❌ NETWORK ERROR";
-setTimeout(function() { btn.textContent = "☁️ REFRESH"; }, 2000);
+setTimeout(function() { btn.textContent = "🔄 REFRESH"; }, 2000);
 };
 x.send();
 }
@@ -620,7 +623,10 @@ this.r();
 }
 for(var i=0;i<particleCount;i++) ps.push(new Pt());
 var connDist = window.innerWidth < 768 ? 100 : 150;
-(function an(){ct.clearRect(0,0,cv.width,cv.height);for(var i=0;i<ps.length;i++){ps[i].u();ps[i].d();}for(var i=0;i<ps.length;i++)for(var j=i+1;j<ps.length;j++){var dx=ps[i].x-ps[j].x,dy=ps[i].y-ps[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<connDist){ct.beginPath();ct.strokeStyle="rgba(192,192,192,"+((1-d/connDist)*.15)+")";ct.lineWidth=.5;ct.moveTo(ps[i].x,ps[i].y);ct.lineTo(ps[j].x,ps[j].y);ct.stroke();}}requestAnimationFrame(an);})();
+(function an(){ct.clearRect(0,0,cv.width,cv.height);for(var i=0;i<ps.length;i++){ps[i].u();ps[i].d();}
+for(var i=0;i<ps.length;i++)for(var j=i+1;j<ps.length;j++){var dx=ps[i].x-ps[j].x,dy=ps[i].y-ps[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<connDist)
+{ct.beginPath();ct.strokeStyle="rgba(192,192,192,"+((1-d/connDist)*.15)+")";ct.lineWidth=.5;ct.moveTo(ps[i].x,ps[i].y);ct.lineTo(ps[j].x,ps[j].y);ct.stroke();}}
+requestAnimationFrame(an);})();
 }
 
 var bxs = document.querySelectorAll(".electric-spark-border");
@@ -675,7 +681,7 @@ document.getElementById("submitBtn").disabled=false;
 if(ok){
 document.getElementById("registrationForm").style.display="none";
 document.getElementById("successMessage").style.display="block";
-document.getElementById("cloudStatusMsg").innerHTML='<span class="cloud-badge ok">🔥 SAVED TO FIREBASE CLOUD ✓</span>';
+document.getElementById("cloudStatusMsg").innerHTML='<span class="cloud-badge ok">☁️ SAVED TO FIREBASE CLOUD ✅</span>';
 } else {
 document.getElementById("registrationForm").style.display="none";
 document.getElementById("errorMessage").style.display="block";
@@ -706,7 +712,11 @@ if(search){
 filtered=[];
 for(var i=0;i<allData.length;i++){
 var e=allData[i];
-if((e.name&&e.name.toLowerCase().indexOf(search)!==-1)||(e.whatsapp&&e.whatsapp.toLowerCase().indexOf(search)!==-1)||(e.email&&e.email.toLowerCase().indexOf(search)!==-1)||(e.interests&&e.interests.toLowerCase().indexOf(search)!==-1)||(e.accommodation&&e.accommodation.toLowerCase().indexOf(search)!==-1))
+if((e.name&&e.name.toLowerCase().indexOf(search)!==-1)||
+(e.whatsapp&&e.whatsapp.toLowerCase().indexOf(search)!==-1)||
+(e.email&&e.email.toLowerCase().indexOf(search)!==-1)||
+(e.interests&&e.interests.toLowerCase().indexOf(search)!==-1)||
+(e.accommodation&&e.accommodation.toLowerCase().indexOf(search)!==-1))
 filtered.push(e);
 }
 }
@@ -717,7 +727,7 @@ document.getElementById("statDay").textContent=dc;
 document.getElementById("statHostel").textContent=hc;
 document.getElementById("statToday").textContent=tc;
 var tbody=document.getElementById("adminTableBody");
-if(filtered.length===0){tbody.innerHTML='<tr><td colspan="8" class="no-data">'+(search?"No matches":"No registrations. Click ☁️ REFRESH.")+"</td></tr>";return;}
+if(filtered.length===0){tbody.innerHTML='<tr><td colspan="8" class="no-data">'+(search?"No matches":"No registrations. Click 🔄 REFRESH.")+"</td></tr>";return;}
 var h="";
 for(var i=0;i<filtered.length;i++){
 var e=filtered[i];
@@ -730,7 +740,8 @@ tbody.innerHTML=h;
 function deleteEntry(key) {
 if(!confirm("Delete this entry?"))return;
 firebaseDelete(key, function(ok) {
-if(ok){for(var i=0;i<allData.length;i++){if(allData[i]._key===key){allData.splice(i,1);break;}}filterTable();}
+if(ok){for(var i=0;i<allData.length;i++){if(allData[i]._key===key){allData.splice(i,1);break;}}
+filterTable();}
 else alert("Delete failed. Try again.");
 });
 }
